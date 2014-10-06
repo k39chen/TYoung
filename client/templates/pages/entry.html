@@ -1,0 +1,120 @@
+<template name="entryPage">
+<div id="entryPage" class="page">
+	<h1>
+		<i class="fa fa-angle-left prev"></i>
+		<span>{{dateStr}}</span>
+		<i class="fa fa-angle-right next"></i>
+	</h1>
+	<div class="exerciseSection section">
+		<h2>
+			<span><i class="fa fa-heart"></i> Workout</span>
+			<span class="addExerciseBtn button">Add Exercise</span>
+		</h2>
+		<div class="exerciseList entryList">
+			<div class="exercise">
+				<div class="title">
+					<span><i class="toggle fa fa-angle-down"></i> Dumbell Bench</span>
+					<i class="fa fa-times-circle delete"></i>
+				</div>
+				<div class="sets">
+					<div class="set">
+						<div class="label">
+							<span>Set #1</span>
+						</div>
+						<i class="delete fa fa-times-circle"></i>
+						<div class="info">
+							<span class="editable">50</span>
+							<span>lbs</span>
+							<span>x</span>
+							<span class="editable">12</span>
+							<span>reps</span>
+						</div>
+					</div>
+					<div class="set">
+						<div class="label">
+							<span>Set #2</span>
+						</div>
+						<i class="delete fa fa-times-circle"></i>
+						<div class="info">
+							<span class="editable">50</span>
+							<span>lbs</span>
+							<span>x</span>
+							<span class="editable">12</span>
+							<span>reps</span>
+						</div>
+					</div>
+					<div class="set">
+						<div class="label">
+							<span>Set #3</span>
+						</div>
+						<i class="delete fa fa-times-circle"></i>
+						<div class="info">
+							<span class="editable">50</span>
+							<span>lbs</span>
+							<span>x</span>
+							<span class="editable">12</span>
+							<span>reps</span>
+						</div>
+					</div>
+					<div class="set">
+						<div class="label">
+							<span>Set #4</span>
+						</div>
+						<i class="delete fa fa-times-circle"></i>
+						<div class="info">
+							<span class="editable">50</span>
+							<span>lbs</span>
+							<span>x</span>
+							<span class="editable">12</span>
+							<span>reps</span>
+						</div>
+					</div>
+				</div>
+				<div class="controls">
+					<span class="addSetBtn button">Add Set</span>
+				</div>
+				<div class="average">
+					<span>Averaged</span>
+					<span class="accent">50</span>
+					<span>lbs / </span>
+					<span class="accent">12</span>
+					<span>reps over </span>
+					<span class="accent">3</span>
+					<span>sets</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="dietSection section">
+		<h2>
+			<span><i class="fa fa-cutlery"></i> Diet</span>
+			<div class="resultOptions">
+				<span class="resultOption button" data-result="good">Good</span>
+				<span class="resultOption button" data-result="ok">OK</span>
+				<span class="resultOption button" data-result="bad">Bad</span>
+			</div>
+		</h2>
+		<div class="dietList entryList">
+			<div class="meals">
+				<div class="meal">
+					<div class="title">
+						<span><i class="toggle fa fa-angle-down"></i> Breakfast</span>
+						<i class="fa fa-times-circle delete"></i>
+					</div>
+					<div class="description">Dim sum at Dragon King</div>
+				</div>
+				<div class="meal">
+					<div class="title">
+						<span><i class="toggle fa fa-angle-down"></i> Lunch</span>
+						<i class="fa fa-times-circle delete"></i>
+					</div>
+					<div class="description">Dim sum at Dragon King</div>
+				</div>
+			</div>
+			<div class="controls">
+				<span class="addMealBtn button">Add Meal</span>
+			</div>
+		</div>
+	</div>
+</div>
+</template>

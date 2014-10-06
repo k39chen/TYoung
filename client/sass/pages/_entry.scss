@@ -1,0 +1,217 @@
+#entryPage {
+	h1 {
+		overflow: hidden;
+
+		.prev, .next {
+			cursor: pointer;
+			position: absolute;
+			top: 0.2em;
+			font-size: 1.5em;
+			font-weight: bold;
+			opacity: 0.8;
+
+			&.hover {
+				opacity: 1.0;
+			}
+		}
+		.prev {
+			left: 16px;
+		}
+		.next {
+			right: 16px;
+		}
+	}
+	h2 {
+		overflow: hidden;
+		height: 2.0em;
+		line-height: 2.0em;
+		span {
+			float: left;
+		}
+		.addExerciseBtn {
+			float: right;
+			margin-top: 0.3em;
+		}
+	}
+	.entryList {
+		margin: 0 1.0em;
+		text-align: left;
+	}
+	.delete {
+		cursor: pointer;
+		float: right;
+		color: lighten($lightTextColor,40%);
+		
+		font-size: 1.25em;
+		margin: 0.3em 0 0 0.5em;
+
+		&.hover {
+			color: $colorBad;
+		}
+	}
+	.exerciseSection {
+		.exercise {
+			color: $lightTextColor;
+			margin-bottom: 1.0em;
+
+			.title {
+				border-bottom: solid 1px lighten($lightTextColor,40%);
+				overflow: hidden;
+				height: 2.0em;
+				line-height: 2.0em;
+
+				span {
+					float: left;
+
+					.toggle {
+						cursor: pointer;
+						font-weight: bold;
+						color: lighten($lightTextColor,30%);
+						margin-right: 0.2em;
+
+						&.hover {
+							color: $themeColor;
+						}
+					}
+				}
+			}
+			.sets {
+
+				.set {
+					overflow: hidden;
+					height: 2.0em;
+					line-height: 2.0em;
+					border-bottom: solid 1px lighten($lightTextColor,60%);
+					.label {
+						float: left;
+						color: $themeColor;
+					}
+					.info {
+						float: right;
+						.editable {
+							cursor: pointer;
+							background: $themeAlt;
+							color: #fff;
+							border-radius: 4px;
+							padding: 0.1em 0.5em;
+						
+							&.hover {
+								background-color: lighten($themeAlt,10%);
+							}
+						}
+					}
+				}
+			}
+		}
+		.controls {
+			overflow: hidden;
+			border-bottom: solid 1px lighten($lightTextColor,60%);
+			.addSetBtn {
+				float: left;
+				margin: 0.3em 0;
+			}
+		}
+		.average {
+			margin-top: 0.6em;
+			text-align: right;
+			font-size: 0.8em;
+			font-weight: 300;
+			.accent {
+				font-weight: 500;
+				color: $themeColor;
+			}
+		}
+	}
+	.dietSection {
+		.resultOptions {
+			margin-top: 0.3em;
+			float: right;
+			.resultOption {
+				margin-left: 0.2em;
+				background-color: #aaa;
+				border-bottom: solid 2px darken(#aaa,20%);
+
+				&.hover {
+					background-color: lighten(#aaa,10%);
+					border-bottom: solid 2px lighten(darken(#aaa,20%),10%);
+
+				}
+
+				&[data-result="good"].selected {
+					background-color: $colorGood;
+					border-bottom: solid 1px darken($colorGood,20%);
+					&.hover {
+						background-color: lighten($colorGood,10%);
+						border-bottom: solid 1px lighten(darken($colorGood,20%),10%);
+					}
+				}
+				&[data-result="ok"].selected {
+					background-color: $colorOk;
+					border-bottom: solid 1px darken($colorOk,20%);
+					&.hover {
+						background-color: lighten($colorOk,10%);
+						border-bottom: solid 1px lighten(darken($colorOk,20%),10%);
+					}
+				}
+				&[data-result="bad"].selected {
+					background-color: $colorBad;
+					border-bottom: solid 1px darken($colorBad,20%);
+					&.hover {
+						background-color: lighten($colorBad,10%);
+						border-bottom: solid 1px lighten(darken($colorBad,20%),10%);
+					}
+				}
+			}
+		}
+		.meals {
+			.meal {
+				margin-bottom: 0.5em;
+				.title {
+					border-bottom: solid 1px lighten($lightTextColor,40%);
+					overflow: hidden;
+					height: 2.0em;
+					line-height: 2.0em;
+
+					span {
+						float: left;
+
+						.toggle {
+							cursor: pointer;
+							font-weight: bold;
+							color: lighten($lightTextColor,30%);
+							margin-right: 0.2em;
+
+							&.hover {
+								color: $themeColor;
+							}
+						}
+					}
+				}
+				.description {
+					cursor: pointer;
+					display: inline-block;
+					overflow: hidden;
+					height: 2.0em;
+					margin-top: 0.1em;
+					border-radius: 4px;
+					line-height: 2.0em;
+					background: $themeAlt;
+					color: #fff;
+					padding: 0 12px;
+
+					&.hover {
+						background: lighten($themeAlt,10%);
+					}
+				}
+			}
+		}
+		.controls {
+			overflow: hidden;
+			margin-top: 1.0em;
+			.addMealBtn {
+				float: left;
+				margin: 0.3em 0;
+			}
+		}
+	}
+}

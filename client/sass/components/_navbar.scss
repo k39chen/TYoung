@@ -1,0 +1,9 @@
+#navbar {
+	position: fixed;
+	bottom: 0px;
+	width: 100%;
+	height: $navbarHeight;
+	line-height: $navbarHeight;
+	background: #fff;
+	border-top: solid 1px $lightTextColor;
+}

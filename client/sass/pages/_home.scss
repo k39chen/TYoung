@@ -1,0 +1,27 @@
+#homePage {
+	h1 {
+		margin-top: 64px;
+		font-size: 32px;
+		font-weight: 500;
+	}
+	.ui-datepicker {
+		font-family: GothamRounded !important;
+		width: 100%;
+		border: none;
+		padding: 0;
+
+		.ui-datepicker-header {
+			padding: 12px 0;
+		}
+		.ui-datepicker-prev, .ui-datepicker-next {
+			cursor: pointer;
+			top: 10px;
+		}
+		.ui-datepicker-prev {
+			left: 4px;
+		}
+		.ui-datepicker-next {
+			right: 4px;
+		}
+	}
+}

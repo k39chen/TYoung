@@ -2,15 +2,24 @@
 // ...
 
 // define router configuration
-// ...
+Router.configure({
+	layoutTemplate: "screen"
+});
 
 // define routes
-// ...
-
 Router.map(function(){
-	this.route("app", {
+	this.route("homePage", {
 		path: "/",
-		template: "app"
-		/* yieldTemplates */
+		template: "homePage",
+		yieldTemplates: {"homePage":{to: "pageContent"}}
+	});
+	this.route("entryPage", {
+		path: "/entry/:date",
+		template: "entryPage",
+		yieldTemplates: {"entryPage":{to: "pageContent"}},
+		data: function(){
+			var date = this.params.date;
+			return date;
+		}
 	});
 });

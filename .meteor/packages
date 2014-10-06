@@ -10,4 +10,6 @@ particle4dev:sass
 mrt:jquery-ui
 iron:router
 natestrauser:font-awesome
+mrt:jquery-ui-bootstrap
+mrt:momentjs
 

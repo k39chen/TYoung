@@ -1,22 +1,17 @@
-Generic Meteor
+TYoung Fitness Meteor
 =======
 
-This project is solely for the purpose of acting as a base template for Meteor JS projects.
-
-Packages to add:
-- particle4dev:sass
-- mrt:jquery-ui
-- iron:router
-- natestrauser:font-awesome
+A workout and diet app for Thomas Young.
 
 Features
 ------------
-_List project features here._
+- Tracks workouts and diets
+- Charts trending data and generates progress reports
 
 Usage
 ------------
 
-Copy the contents of this project to create a generic Meteor project.
+Can be access [here](http://tyoung.www.meteor.com/).
 
 Credits
 -------------

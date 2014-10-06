@@ -1,4 +1,10 @@
 @import "_fonts.scss";
 @import "_reset.scss";
 @import "_defaults.scss";
-@import "_app.scss";
+
+// components
+@import "components/_navbar.scss";
+
+// pages
+@import "pages/_home.scss";
+@import "pages/_entry.scss";
