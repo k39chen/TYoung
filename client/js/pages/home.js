@@ -11,7 +11,7 @@ Template.homePage.rendered = function() {
 Template.homePage.events({
 	"click #button": function(){
 		var date = $("#datepicker").datepicker("getDate").valueOf();
-		Router.go("/entry/"+date);
+		Router.go("/entry/"+moment(date).format("YYYY-MM-DD"));
 
 		/*
 		var date = $("#datepicker").datepicker("getDate").valueOf();

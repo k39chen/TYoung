@@ -49,6 +49,37 @@
 			color: $colorBad;
 		}
 	}
+	.weightSection {
+		background-image: url("assets/images/cover.jpg");
+		background-size: cover;
+		background-position: center;
+		height: 200px;
+		margin: 0;
+
+		.label {
+			padding-top: 48px;
+			margin-bottom: 0.6em;
+			font-size: 0.8em;
+			font-weight: 700;
+			color: #000;
+		}
+		.weight {
+			.value {
+				cursor: pointer;
+				font-size: 3.0em;
+				background-color: $themeAlt;
+				border: solid 2px darken($themeAlt,20%);
+				color: #fff;
+				border-radius: 4px;
+				padding: 0.1em 0.25em;
+			
+				&.hover {
+					background-color: lighten($themeAlt,10%);
+					border-color: $themeAlt;
+				}
+			}
+		}
+	}
 	.exerciseSection {
 		.exercise {
 			color: $lightTextColor;

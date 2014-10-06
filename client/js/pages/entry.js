@@ -23,6 +23,17 @@ Template.entryPage.events({
 	"click .next": function(e){
 		// ...
 	},
+	"mouseover .weight .value": function(e) {
+		var $el = $(e.target);
+		$el.addClass("hover");
+	},
+	"mouseout .weight .value": function(e) {
+		var $el = $(e.target);
+		$el.removeClass("hover");
+	},
+	"click .weight .value": function(e){
+		// ...
+	},
 	"mouseover .addExerciseBtn": function(e) {
 		var $el = $(e.target);
 		$el.addClass("hover");
@@ -103,7 +114,7 @@ Template.entryPage.events({
 });
 Template.entryPage.helpers({
 	dateStr: function(){
-		var date = this;
-		return moment(parseInt(date,10)).format("ddd MMM D YYYY");
+		var date = this+"";
+		return moment(date).format("ddd MMM D YYYY");
 	}
 });

@@ -30,7 +30,6 @@ h1 {
 h2 {
 	font-weight: 500;
 	text-align: left;
-	margin: 1.0em;
 	padding-bottom: 0.25em;
 	border-bottom: solid 2px $themeColor;
 
@@ -41,10 +40,10 @@ h2 {
 }
 #pageContent {
 	margin-top: $headerHeight;
-	padding-top: 0.25em;
 	padding-bottom: $navbarHeight;
 }
 .section {
+	margin: 1.0em;
 	margin-bottom: 1.5em;
 }
 .button {
