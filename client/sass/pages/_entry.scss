@@ -2,23 +2,18 @@
 	h1 {
 		overflow: hidden;
 
-		.prev, .next {
+		.prev {
 			cursor: pointer;
 			position: absolute;
 			top: 0.2em;
 			font-size: 1.5em;
 			font-weight: bold;
 			opacity: 0.8;
+			left: 16px;
 
 			&.hover {
 				opacity: 1.0;
 			}
-		}
-		.prev {
-			left: 16px;
-		}
-		.next {
-			right: 16px;
 		}
 	}
 	h2 {
@@ -34,7 +29,6 @@
 		}
 	}
 	.entryList {
-		margin: 0 1.0em;
 		text-align: left;
 	}
 	.delete {
@@ -49,6 +43,34 @@
 			color: $colorBad;
 		}
 	}
+
+	.editable {
+		cursor: pointer;
+		background-color: $themeAlt;
+		color: #fff;
+		border-radius: 4px;
+		padding: 0.1em 0.25em;
+	
+		&.hover {
+			background-color: lighten($themeAlt,10%);
+			border-color: $themeAlt;
+		}
+	}
+	.toggle, .edit {
+		cursor: pointer;
+		font-weight: bold;
+		color: lighten($lightTextColor,30%);
+		margin-right: 0.2em;
+
+		&.hover {
+			color: $themeColor;
+		}
+	}
+	.edit {
+		font-size: 0.7em;
+		margin-left: 0.3em;
+	}
+
 	.weightSection {
 		background-image: url("assets/images/cover.jpg");
 		background-size: cover;
@@ -65,18 +87,8 @@
 		}
 		.weight {
 			.value {
-				cursor: pointer;
 				font-size: 3.0em;
-				background-color: $themeAlt;
 				border: solid 2px darken($themeAlt,20%);
-				color: #fff;
-				border-radius: 4px;
-				padding: 0.1em 0.25em;
-			
-				&.hover {
-					background-color: lighten($themeAlt,10%);
-					border-color: $themeAlt;
-				}
 			}
 		}
 	}
@@ -93,21 +105,9 @@
 
 				span {
 					float: left;
-
-					.toggle {
-						cursor: pointer;
-						font-weight: bold;
-						color: lighten($lightTextColor,30%);
-						margin-right: 0.2em;
-
-						&.hover {
-							color: $themeColor;
-						}
-					}
 				}
 			}
 			.sets {
-
 				.set {
 					overflow: hidden;
 					height: 2.0em;
@@ -119,17 +119,6 @@
 					}
 					.info {
 						float: right;
-						.editable {
-							cursor: pointer;
-							background: $themeAlt;
-							color: #fff;
-							border-radius: 4px;
-							padding: 0.1em 0.5em;
-						
-							&.hover {
-								background-color: lighten($themeAlt,10%);
-							}
-						}
 					}
 				}
 			}
@@ -205,34 +194,15 @@
 
 					span {
 						float: left;
-
-						.toggle {
-							cursor: pointer;
-							font-weight: bold;
-							color: lighten($lightTextColor,30%);
-							margin-right: 0.2em;
-
-							&.hover {
-								color: $themeColor;
-							}
-						}
 					}
 				}
 				.description {
-					cursor: pointer;
 					display: inline-block;
 					overflow: hidden;
 					height: 2.0em;
 					margin-top: 0.1em;
 					border-radius: 4px;
 					line-height: 2.0em;
-					background: $themeAlt;
-					color: #fff;
-					padding: 0 12px;
-
-					&.hover {
-						background: lighten($themeAlt,10%);
-					}
 				}
 			}
 		}

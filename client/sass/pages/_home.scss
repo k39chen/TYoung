@@ -1,27 +1,65 @@
 #homePage {
-	h1 {
-		margin-top: 64px;
-		font-size: 32px;
-		font-weight: 500;
-	}
 	.ui-datepicker {
 		font-family: GothamRounded !important;
+		font-size: 1.0em;
 		width: 100%;
 		border: none;
 		padding: 0;
-
 		.ui-datepicker-header {
-			padding: 12px 0;
+			font-weight: 500;
+			border-radius: 0;
+			border-bottom: solid 1px #aaa;
 		}
 		.ui-datepicker-prev, .ui-datepicker-next {
 			cursor: pointer;
-			top: 10px;
 		}
 		.ui-datepicker-prev {
 			left: 4px;
 		}
 		.ui-datepicker-next {
 			right: 4px;
+		}
+		th {
+			font-weight: 700;
+		}
+		td {
+			.ui-state-active {
+				box-sizing: border-box;
+				border: solid 2px $themeColor;
+				background-color: transparent;
+				color: gray;
+			}
+			.ui-state-default:hover {
+				background-color: lighten($themeAlt,20%);
+				color: #fff;
+			}
+			a {
+				font-size: 1.0em !important;
+				padding: 1.0em;
+			}
+		}
+		.highlight {
+			&.good a {
+				color: #fff;
+				background-color: $colorGood;
+				opacity: 0.6;
+			}
+			&.ok a {
+				color: #fff;
+				background-color: $colorOk;
+				opacity: 0.6;
+			}
+			&.bad a {
+				color: #fff;
+				background-color: $colorBad;
+				opacity: 0.6;
+			}
+			a {
+				border-radius: 4px;
+				&.ui-state-hover {
+					opacity: 1;
+				}
+			}
 		}
 	}
 }

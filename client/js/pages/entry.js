@@ -1,115 +1,70 @@
 Template.entryPage.rendered = function() {
 };
 Template.entryPage.events({
-	"mouseover .prev": function(e) {
-		var $el = $(e.target);
-		$el.addClass("hover");
-	},
-	"mouseout .prev": function(e) {
-		var $el = $(e.target);
-		$el.removeClass("hover");
-	},
+	"mouseover .prev": addHoverTarget,
+	"mouseout .prev": removeHoverTarget,
 	"click .prev": function(e){
-		// ...
+		Router.go("/");
 	},
-	"mouseover .next": function(e) {
-		var $el = $(e.target);
-		$el.addClass("hover");
-	},
-	"mouseout .next": function(e) {
-		var $el = $(e.target);
-		$el.removeClass("hover");
-	},
-	"click .next": function(e){
-		// ...
-	},
-	"mouseover .weight .value": function(e) {
-		var $el = $(e.target);
-		$el.addClass("hover");
-	},
-	"mouseout .weight .value": function(e) {
-		var $el = $(e.target);
-		$el.removeClass("hover");
-	},
+	"mouseover .weight .value": addHoverTarget,
+	"mouseout .weight .value": removeHoverTarget,
 	"click .weight .value": function(e){
-		// ...
-	},
-	"mouseover .addExerciseBtn": function(e) {
 		var $el = $(e.target);
-		$el.addClass("hover");
+		$el.blur();
 	},
-	"mouseout .addExerciseBtn": function(e) {
-		var $el = $(e.target);
-		$el.removeClass("hover");
-	},
+	"mouseover .addExerciseBtn": addHoverTarget,
+	"mouseout .addExerciseBtn": removeHoverTarget,
 	"click .addExerciseBtn": function(e){
-		// ...
-	},
-	"mouseover .toggle": function(e) {
 		var $el = $(e.target);
-		$el.addClass("hover");
+		$el.blur();
 	},
-	"mouseout .toggle": function(e) {
-		var $el = $(e.target);
-		$el.removeClass("hover");
-	},
+	"mouseover .toggle": addHoverTarget,
+	"mouseout .toggle": removeHoverTarget,
 	"click .toggle": function(e){
-		// ...
-	},
-	"mouseover .addSetBtn": function(e) {
 		var $el = $(e.target);
-		$el.addClass("hover");
+		$el.blur();
 	},
-	"mouseout .addSetBtn": function(e) {
+	"mouseover .edit": addHoverTarget,
+	"mouseout .edit": removeHoverTarget,
+	"click .edit": function(e){
 		var $el = $(e.target);
-		$el.removeClass("hover");
+		$el.blur();
 	},
+	"mouseover .addSetBtn": addHoverTarget,
+	"mouseout .addSetBtn": removeHoverTarget,
 	"click .addSetBtn": function(e){
-		// ...
-	},
-	"mouseover .editable": function(e) {
 		var $el = $(e.target);
-		$el.addClass("hover");
+		$el.blur();
 	},
-	"mouseout .editable": function(e) {
-		var $el = $(e.target);
-		$el.removeClass("hover");
-	},
+	"mouseover .editable": addHoverTarget,
+	"mouseout .editable": removeHoverTarget,
 	"click .editable": function(e){
-		// ...
-	},
-	"mouseover .delete": function(e) {
 		var $el = $(e.target);
-		$el.addClass("hover");
+		$el.blur();
 	},
-	"mouseout .delete": function(e) {
-		var $el = $(e.target);
-		$el.removeClass("hover");
-	},
+	"mouseover .delete": addHoverTarget,
+	"mouseout .delete": removeHoverTarget,
 	"click .delete": function(e){
-		// ...
-	},
-	"mouseover .resultOption": function(e) {
 		var $el = $(e.target);
-		$el.addClass("hover");
+		$el.blur();
 	},
-	"mouseout .resultOption": function(e) {
-		var $el = $(e.target);
-		$el.removeClass("hover");
-	},
+	"mouseover .resultOption": addHoverTarget,
+	"mouseout .resultOption": removeHoverTarget,
 	"click .resultOption": function(e){
-		// ...
-	},
-	"mouseover .description": function(e) {
 		var $el = $(e.target);
-		$el.addClass("hover");
+		$el.blur();
 	},
-	"mouseout .description": function(e) {
-		var $el = $(e.target);
-		$el.removeClass("hover");
-	},
+	"mouseover .description": addHoverTarget,
+	"mouseout .description": removeHoverTarget,
 	"click .description": function(e){
-		// ...
+		var $el = $(e.target);
+		$el.blur();
+	},
+	"mouseover .addMealBtn": addHoverTarget,
+	"mouseout .addMealBtn": removeHoverTarget,
+	"click .addMealBtn": function(e){
+		var $el = $(e.target);
+		$el.blur();
 	}
 });
 Template.entryPage.helpers({
